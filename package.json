@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
+  "homepage": "https://VadBorovec.github.io/marvel-comics-api",
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel-bundler": "^1.12.5",
     "postcss-modules": "^3.2.2"
   },
